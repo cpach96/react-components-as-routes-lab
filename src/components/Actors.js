@@ -4,9 +4,12 @@ import { actors } from '../data';
 const Actors = () => {
   return (
     <div>
-      {/*{code here}*/}
-    </div>
-  );
+     <h1> Actors Page </h1>
+     {actors.map((element, index) => 
+            <div key={index}>
+                <h3 >Name: {element.name}</h3>
+                 </div>)}
+    </div>)
 };
 
 export default Actors;
